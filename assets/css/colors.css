@@ -1,51 +1,89 @@
-/* =========================
-   Page-specific background colors
-   ========================= */
-
-/* Networking Page */
-body.networking-page {
-    background-color: #1a237e; /* Dark Blue */
-    color: #ffffff;
+body.home-page {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Automation Page */
-body.automation-page {
-    background-color: #00695c; /* Teal Green */
-    color: #ffffff;
+.navbar {
+    background-color: #222;
+    padding: 15px;
 }
 
-/* Network Security Page */
-body.security-page {
-    background-color: #b71c1c; /* Dark Red */
-    color: #ffffff;
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
 }
 
-/* Cloud & Data Center Page */
-body.cloud-page {
-    background-color: #4a148c; /* Purple */
-    color: #ffffff;
-}
-
-/* Blog Page */
-body.blog-page {
-    background-color: #f57f17; /* Dark Yellow / Amber */
-    color: #000000;
-}
-
-/* Optional: style the main intro box for readability */
-#main .item.intro {
-    padding: 2em;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-/* Links styling for all pages */
-a {
-    color: #ffeb3b; /* Yellowish link color */
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #ffffff;
+.nav-menu li a {
+    color: #fff;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-menu li a:hover {
+    color: #d64760;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #333;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #d64760;
+}
+
+.card p {
+    font-size: 1em;
+    opacity: 0.85;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: #fff;
 }
