@@ -2,127 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THINK BRIDGE - Networking, Automation & Security</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Hero Section */
-        #hero {
-            background: url('images/hero-bg.jpg') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-        }
-        #hero h1 { font-size: 3rem; margin-bottom: 15px; }
-        #hero p { font-size: 1.2rem; }
-        #hero .btn { margin-top: 20px; }
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-        /* Navbar */
-        .navbar { background-color: #333; }
-        .navbar .nav-link { color: white; margin-right: 15px; }
-        .navbar .nav-link:hover { color: #f0a500; }
-
-        /* Services Section */
-        .service-item { text-align: center; margin-bottom: 30px; }
-        .service-item img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .service-item h3 { margin-top: 15px; font-size: 1.5rem; }
-        .service-item p { font-size: 1rem; color: #555; }
-
-        /* Footer */
-        footer { background-color: #333; color: white; padding: 30px 0; text-align: center; }
-        footer .social-links { list-style: none; padding: 0; }
-        footer .social-links li { display: inline-block; margin: 0 10px; }
-        footer .social-links a { color: white; text-decoration: none; }
-        footer .social-links a:hover { color: #f0a500; }
-    </style>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Page Colors CSS -->
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="home-page is-preload">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">THINK BRIDGE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects/networking.html">Network Engineering</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects/automation.html">Automation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects/security.html">Network Security</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects/cloud.html">Cloud & Data Center</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects/blog.html">Blog</a></li>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header / Navigation -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="networking.html">Network Engineering</a></li>
+                    <li><a href="automation.html">Automation</a></li>
+                    <li><a href="security.html">Network Security</a></li>
+                    <li><a href="cloud.html">Cloud & Data Center</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h1>THINK BRIDGE</h1>
-            <p>Networking, Automation & Security | Linux | Python | Ansible | Firewalls | Cloud | Virtualization</p>
-            <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
-        </div>
-    </section>
+        <!-- Main Section -->
+        <section id="main">
 
-    <!-- Services Section -->
-    <section id="services" class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="images/thumbs/01.jpg" alt="Networking">
-                    <h3>Network Engineering Labs</h3>
-                    <p>Hands-on labs and projects for networking concepts, routing, and switching.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="images/thumbs/02.jpg" alt="Automation">
-                    <h3>Automation (Python, Linux, Ansible)</h3>
-                    <p>Learn automation, scripting, and DevOps tools to simplify network operations.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="images/thumbs/03.jpg" alt="Security">
-                    <h3>Network Security</h3>
-                    <p>Explore firewalls, threat mitigation, and secure network architecture.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="images/thumbs/05.jpg" alt="Cloud">
-                    <h3>Cloud & Data Center</h3>
-                    <p>Hands-on labs for cloud platforms, virtualization, and data center technologies.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="images/thumbs/06.jpg" alt="Blog">
-                    <h3>Daily Updates / Blog</h3>
-                    <p>Stay updated with daily tutorials, projects, and network automation tips.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="items">
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>This portfolio is dedicated to <strong>Networking, Automation & Security Labs</strong>. All daily updates and projects are personally maintained by <strong>Muhammad Nasir Khan</strong>.</p>
-            <ul class="social-links">
-                <li><a href="https://linkedin.com/in/muhammad-nasir-khan-762091152">LinkedIn</a></li>
-                <li><a href="https://github.com/Nasir.Khan">GitHub</a></li>
-                <li><a href="mailto:nasirorakzai810@gmail.com">Email</a></li>
-            </ul>
-            <p>&copy; 2025 Muhammad Nasir Khan | Design based on HTML5 UP</p>
-        </div>
-    </footer>
+                <!-- Intro Section -->
+                <div class="item intro span-2">
+                    <h1>THINK BRIDGE</h1>
+                    <p>Networking, Automation & Security<br>
+                       Linux | Python | Ansible | Firewalls | Cloud | Virtualization
+                    </p>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Cards / Pages -->
+                <article class="item thumb span-1">
+                    <h2>Network Engineering Labs</h2>
+                    <a href="networking.html" class="image"><img src="images/thumbs/01.jpg" alt="Networking"></a>
+                </article>
+
+                <article class="item thumb span-2">
+                    <h2>Automation (Python, Linux, Ansible & Scripting)</h2>
+                    <a href="automation.html" class="image"><img src="images/thumbs/02.jpg" alt="Automation"></a>
+                </article>
+
+                <article class="item thumb span-1">
+                    <h2>Network Security</h2>
+                    <a href="security.html" class="image"><img src="images/thumbs/03.jpg" alt="Security"></a>
+                </article>
+
+                <article class="item thumb span-3">
+                    <h2>Cloud & Data Center</h2>
+                    <a href="cloud.html" class="image"><img src="images/thumbs/05.jpg" alt="Cloud"></a>
+                </article>
+
+                <article class="item thumb span-2">
+                    <h2>Daily Updates / Blog</h2>
+                    <a href="blog.html" class="image"><img src="images/thumbs/06.jpg" alt="Blog"></a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <p>This portfolio is dedicated to <strong>Networking, Automation & Security Labs</strong>. 
+                All daily updates and projects are personally maintained by Muhammad Nasir Khan.</p>
+            </section>
+            <section>
+                <ul class="icons">
+                    <li><a href="https://linkedin.com/in/muhammad-nasir-khan-762091152" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Nasir.Khan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="mailto:nasirorakzai810@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2025 Muhammad Nasir Khan</li>
+                    <li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
