@@ -1,97 +1,169 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>THINK BRIDGE - Networking, Automation & Security</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="is-preload">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THINK BRIDGE</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Header / Navigation -->
-    <header id="header">
-        <h1>THINK BRIDGE</h1>
-        <p>Networking, Automation & Security | Linux | Python | Ansible | Firewalls | Cloud | Virtualization</p>
+        /* Body and background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* Services section */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects/networking.html">Network Engineering</a></li>
-                <li><a href="projects/automation.html">Automation</a></li>
-                <li><a href="projects/security.html">Network Security</a></li>
-                <li><a href="projects/cloud.html">Cloud & Data Center</a></li>
-                <li><a href="projects/blog.html">Blog</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Network Engineering</a></li>
+                <li><a href="#">Automation</a></li>
+                <li><a href="#">Network Security</a></li>
+                <li><a href="#">Cloud & Data Center</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <div id="wrapper">
-        <section id="main">
-            <div class="items">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to THINK BRIDGE</h1>
+        <p>Your gateway to Networking, Automation, and Security.</p>
+    </section>
 
-                <!-- Network Engineering -->
-                <article class="item thumb span-1">
-                    <h2>Network Engineering Labs</h2>
-                    <a href="projects/networking.html" class="image"><img src="images/thumbs/01.jpg" alt="Networking"></a>
-                    <p>Hands-on labs and projects for networking concepts, routing, and switching.</p>
-                </article>
-
-                <!-- Automation -->
-                <article class="item thumb span-2">
-                    <h2>Automation (Python, Linux, Ansible & Scripting)</h2>
-                    <a href="projects/automation.html" class="image"><img src="images/thumbs/02.jpg" alt="Automation"></a>
-                    <p>Learn automation, scripting, and DevOps tools to simplify network operations.</p>
-                </article>
-
-                <!-- Network Security -->
-                <article class="item thumb span-1">
-                    <h2>Network Security</h2>
-                    <a href="projects/security.html" class="image"><img src="images/thumbs/03.jpg" alt="Security"></a>
-                    <p>Explore firewalls, threat mitigation, and secure network architecture.</p>
-                </article>
-
-                <!-- Cloud & Data Center -->
-                <article class="item thumb span-2">
-                    <h2>Cloud & Data Center</h2>
-                    <a href="projects/cloud.html" class="image"><img src="images/thumbs/05.jpg" alt="Cloud"></a>
-                    <p>Hands-on labs for cloud platforms, virtualization, and data center technologies.</p>
-                </article>
-
-                <!-- Blog -->
-                <article class="item thumb span-1">
-                    <h2>Daily Updates / Blog</h2>
-                    <a href="projects/blog.html" class="image"><img src="images/thumbs/06.jpg" alt="Blog"></a>
-                    <p>Stay updated with daily tutorials, projects, and network automation tips.</p>
-                </article>
-
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Network Engineering</h3>
+                <p>Design and implementation of robust network infrastructures.</p>
             </div>
-        </section>
+            <div class="card">
+                <h3>Automation</h3>
+                <p>Python, Linux, Ansible, and scripting for network automation.</p>
+            </div>
+            <div class="card">
+                <h3>Network Security</h3>
+                <p>Firewall, VPN, and security monitoring to protect networks.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud & Data Center</h3>
+                <p>Cloud solutions, virtualization, and data center management.</p>
+            </div>
+            <div class="card">
+                <h3>Blog</h3>
+                <p>Latest projects, news, and tutorials in networking and automation.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <section id="footer">
-            <section>
-                <p>This portfolio is dedicated to <strong>Networking, Automation & Security Labs</strong>. All daily updates and projects are personally maintained by <strong>Muhammad Nasir Khan</strong>.</p>
-            </section>
-            <section>
-                <ul class="icons">
-                    <li><a href="https://linkedin.com/in/muhammad-nasir-khan-762091152" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/Nasir.Khan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="mailto:nasirorakzai810@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; 2025 Muhammad Nasir Khan</li><li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </section>
-        </section>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 THINK BRIDGE. All rights reserved.</p>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
