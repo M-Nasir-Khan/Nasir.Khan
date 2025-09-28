@@ -1,0 +1,47 @@
+/* Home Page */
+body.home-page #main .item.intro {
+    background-color: #d64760;  /* Hero section */
+}
+body.home-page #footer {
+    background-color: #150C07;
+}
+
+/* Networking Page */
+body.networking-page #main .item.intro {
+    background-color: #0f3460;
+}
+body.networking-page #footer {
+    background-color: #1e2a78;
+}
+
+/* Automation Page */
+body.automation-page #main .item.intro {
+    background-color: #3c096c;
+}
+body.automation-page #footer {
+    background-color: #5a189a;
+}
+
+/* Security Page */
+body.security-page #main .item.intro {
+    background-color: #1b262c;
+}
+body.security-page #footer {
+    background-color: #0f4c75;
+}
+
+/* Cloud Page */
+body.cloud-page #main .item.intro {
+    background-color: #0077b6;
+}
+body.cloud-page #footer {
+    background-color: #023e8a;
+}
+
+/* Blog Page */
+body.blog-page #main .item.intro {
+    background-color: #ff7f51;
+}
+body.blog-page #footer {
+    background-color: #ff5733;
+}
