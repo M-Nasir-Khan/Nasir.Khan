@@ -3,62 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THINK BRIDGE - Home</title>
-    <link rel="stylesheet" href="css/color.css">
+    <title>THINK BRIDGE</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* Services section */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="network.html">Network Engineering</a></li>
-            <li><a href="automation.html">Automation</a></li>
-            <li><a href="security.html">Network Security</a></li>
-            <li><a href="cloud.html">Cloud & Data Center</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Network Engineering</a></li>
+                <li><a href="#">Automation</a></li>
+                <li><a href="#">Network Security</a></li>
+                <li><a href="#">Cloud & Data Center</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <h1>Welcome to THINK BRIDGE</h1>
-    <p>Your gateway to Networking, Automation, and Security.</p>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to THINK BRIDGE</h1>
+        <p>Your gateway to Networking, Automation, and Security.</p>
+    </section>
 
-<!-- Services Section -->
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-        <div class="card">
-            <h3>Network Engineering</h3>
-            <p>Design and implementation of robust network infrastructures.</p>
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Network Engineering</h3>
+                <p>Design and implementation of robust network infrastructures.</p>
+            </div>
+            <div class="card">
+                <h3>Automation</h3>
+                <p>Python, Linux, Ansible, and scripting for network automation.</p>
+            </div>
+            <div class="card">
+                <h3>Network Security</h3>
+                <p>Firewall, VPN, and security monitoring to protect networks.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud & Data Center</h3>
+                <p>Cloud solutions, virtualization, and data center management.</p>
+            </div>
+            <div class="card">
+                <h3>Blog</h3>
+                <p>Latest projects, news, and tutorials in networking and automation.</p>
+            </div>
         </div>
-        <div class="card">
-            <h3>Automation</h3>
-            <p>Python, Linux, Ansible, and scripting for network automation.</p>
-        </div>
-        <div class="card">
-            <h3>Network Security</h3>
-            <p>Firewall, VPN, and security monitoring to protect networks.</p>
-        </div>
-        <div class="card">
-            <h3>Cloud & Data Center</h3>
-            <p>Cloud solutions, virtualization, and data center management.</p>
-        </div>
-        <div class="card">
-            <h3>Blog</h3>
-            <p>Latest projects, news, and tutorials in networking and automation.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 THINK BRIDGE. All rights reserved.</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 THINK BRIDGE. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
