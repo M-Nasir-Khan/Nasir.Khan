@@ -1,47 +1,51 @@
-/* Home Page */
-body.home-page #main .item.intro {
-    background-color: #d64760;  /* Hero section */
-}
-body.home-page #footer {
-    background-color: #150C07;
-}
+/* =========================
+   Page-specific background colors
+   ========================= */
 
 /* Networking Page */
-body.networking-page #main .item.intro {
-    background-color: #0f3460;
-}
-body.networking-page #footer {
-    background-color: #1e2a78;
+body.networking-page {
+    background-color: #1a237e; /* Dark Blue */
+    color: #ffffff;
 }
 
 /* Automation Page */
-body.automation-page #main .item.intro {
-    background-color: #3c096c;
-}
-body.automation-page #footer {
-    background-color: #5a189a;
+body.automation-page {
+    background-color: #00695c; /* Teal Green */
+    color: #ffffff;
 }
 
-/* Security Page */
-body.security-page #main .item.intro {
-    background-color: #1b262c;
-}
-body.security-page #footer {
-    background-color: #0f4c75;
+/* Network Security Page */
+body.security-page {
+    background-color: #b71c1c; /* Dark Red */
+    color: #ffffff;
 }
 
-/* Cloud Page */
-body.cloud-page #main .item.intro {
-    background-color: #0077b6;
-}
-body.cloud-page #footer {
-    background-color: #023e8a;
+/* Cloud & Data Center Page */
+body.cloud-page {
+    background-color: #4a148c; /* Purple */
+    color: #ffffff;
 }
 
 /* Blog Page */
-body.blog-page #main .item.intro {
-    background-color: #ff7f51;
+body.blog-page {
+    background-color: #f57f17; /* Dark Yellow / Amber */
+    color: #000000;
 }
-body.blog-page #footer {
-    background-color: #ff5733;
+
+/* Optional: style the main intro box for readability */
+#main .item.intro {
+    padding: 2em;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Links styling for all pages */
+a {
+    color: #ffeb3b; /* Yellowish link color */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
